@@ -16,7 +16,7 @@ jobs:
     - name: Shell Script
       run: |
 
-        latestVersion=$(curl --silent "https://api.github.com/repos/czy0729/Bangumi/releases/latest" | jq ."tag_name")
+        latestVersion=$(curl --silent "https://api.github.com/repos/czy0729/Bangumi/releases/latest" | jq ."tag_name" | tr -d '"')
         latestIPAUrl="https://github.com/czy0729/Bangumi/releases/download/${latestVersion}/bangumi_${latestVersion}_archive.ipa"
         statusCode=$(curl --silent --head -w "%{http_code}\n" "$latestIPAUrl" -o /dev/null)
 
