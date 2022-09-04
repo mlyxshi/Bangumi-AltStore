@@ -7,13 +7,10 @@ on:
 jobs:
   AutoUpdateBangumi:
     runs-on: ubuntu-latest
-    outputs:
-      output1: ${{ steps.shell.outputs.latestVersion }}
     steps:
     - uses: actions/checkout@v3
     # - run: sudo apt install -y pcregrep jq
     - name: Shell Script
-      id: shell
       run: |
 
         latestVersion=$(curl --silent "https://api.github.com/repos/czy0729/Bangumi/releases/latest" | jq ."tag_name" | tr -d '"')
