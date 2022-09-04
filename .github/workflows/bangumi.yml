@@ -28,17 +28,7 @@ jobs:
           jq --null-input \
             --arg latestVersion $latestVersion \
             --arg latestIPAUrl $latestIPAUrl  \
-            '{ "name": "Bangumi", "identifier": "tv.bangumi.czy0729", "apps": [{ \
-            "beta": false, \
-            "name": "Bangumi", \
-            "bundleIdentifier": "tv.bangumi.czy0729", \
-            "developerName": "czy0729", \
-            "subtitle": "Bangumi", \
-            "version": $latestVersion, \
-            "downloadURL": $latestIPAUrl,
-            "iconURL": "https://raw.githubusercontent.com/czy0729/Bangumi/master/src/assets/images/icon.png",
-            "tintColor": "9b54fd" \
-            }] }' \
+            '{ "name": "Bangumi", "identifier": "tv.bangumi.czy0729", "apps": [{ "beta": false, "name": "Bangumi", "bundleIdentifier": "tv.bangumi.czy0729", "developerName": "czy0729", "subtitle": "Bangumi", "version": $latestVersion, "downloadURL": $latestIPAUrl, "iconURL": "https://raw.githubusercontent.com/czy0729/Bangumi/master/src/assets/images/icon.png", "tintColor": "9b54fd" }] }' \
             >  ${GITHUB_WORKSPACE}/bangumi.json
         fi
 
