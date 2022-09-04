@@ -1,17 +1,17 @@
 {
-    "name": "Bangumi",
-    "identifier": "tv.bangumi.czy0729",
-    "apps": [
-        {
-            "beta": false,
-            "name": "Bangumi",
-            "bundleIdentifier": "tv.bangumi.czy0729",
-            "developerName": "czy0729",
-            "subtitle": "Bangumi",
-            "version": "v6.0.0",
-            "downloadURL": "https://github.com/czy0729/Bangumi/releases/download/6.8.0/bangumi_v6.8.0_archive.ipa",
-            "iconURL": "https://raw.githubusercontent.com/czy0729/Bangumi/master/src/assets/images/icon.png",
-            "tintColor": "9b54fd"
-        }
-    ]
+  "name": "Bangumi",
+  "identifier": "tv.bangumi.czy0729",
+  "apps": [
+    {
+      "beta": false,
+      "name": "Bangumi",
+      "bundleIdentifier": "tv.bangumi.czy0729",
+      "developerName": "czy0729",
+      "subtitle": "Bangumi",
+      "version": "6.9.0",
+      "downloadURL": "https://github.com/czy0729/Bangumi/releases/download/6.9.0/bangumi_6.9.0_archive.ipa",
+      "iconURL": "https://raw.githubusercontent.com/czy0729/Bangumi/master/src/assets/images/icon.png",
+      "tintColor": "9b54fd"
+    }
+  ]
 }
