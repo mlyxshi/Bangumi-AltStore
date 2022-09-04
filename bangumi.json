@@ -9,13 +9,13 @@
       "developerName": "czy0729",
       "subtitle": "Bangumi",
       "version": "6.9.0",
-      "versionDate": "2022-09-04T08:24:21:+0000",
+      "versionDate": "2022-09-04T08:37:53:+0000",
       "versionDescription": "https://github.com/czy0729/Bangumi/releases",
       "downloadURL": "https://github.com/czy0729/Bangumi/releases/download/6.9.0/bangumi_6.9.0_archive.ipa",
       "localizedDescription": "An unofficial https://bgm.tv app client for Android and iOS, built with React Native",
       "iconURL": "https://raw.githubusercontent.com/czy0729/Bangumi/master/src/assets/images/icon.png",
       "tintColor": "9b54fd",
-      "size": 100000000,
+      "size": "9\r",
       "screenshotURLs": [
         "https://user-images.githubusercontent.com/13514316/171143439-5e9c6c22-889d-4774-8c66-4316294d5019.png"
       ]
