@@ -1,0 +1,47 @@
+name: "[Auto] update bangumi version"
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '00 00 * * *'
+
+jobs:
+  AutoUpdateBangumi:
+    runs-on: ubuntu-latest
+    outputs:
+      output1: ${{ steps.shell.outputs.latestVersion }}
+    steps:
+    - uses: actions/checkout@v3
+    # - run: sudo apt install -y pcregrep jq
+    - name: Shell Script
+      id: shell
+      run: |
+
+        latestVersion=$(curl --silent "https://api.github.com/repos/czy0729/Bangumi/releases/latest" | jq ."tag_name" | tr -d '"')
+        currentVersion=$(curl --silent "https://raw.githubusercontent.com/mlyxshi/Bangumi-AltStore/main/bangumi.json"| jq ."apps[0].version" | tr -d '"')       
+
+        latestIPAUrl="https://github.com/czy0729/Bangumi/releases/download/${latestVersion}/bangumi_${latestVersion}_archive.ipa"
+
+        if [ $currentVersion == $latestVersion ]; then
+          echo "current bangumi version is latest"
+        else
+
+          jq --null-input \
+            --arg latestVersion $latestVersion \
+            --arg latestIPAUrl $latestIPAUrl  \
+            '{ "name": "Bangumi", "identifier": "tv.bangumi.czy0729", "apps": [{ "beta": false, "name": "Bangumi",}] }' \
+            >  ${GITHUB_WORKSPACE}/config/bangumi.json
+        fi
+
+    - name: Create Pull Request
+      uses: peter-evans/create-pull-request@v4
+      with:
+        token: ${{ secrets.GIT_TOKEN }}
+        branch: update-bangumi
+        title: '[Auto] Update bangumi'
+        body: |
+          Update report
+          - Updated with Bangumi Version
+          - Auto-generated
+        assignees: mlyxshi
+        reviewers: mlyxshi
+
