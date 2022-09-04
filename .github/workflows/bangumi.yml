@@ -19,10 +19,11 @@ jobs:
         latestVersion=$(curl --silent "https://api.github.com/repos/czy0729/Bangumi/releases/latest" | jq ."tag_name" | tr -d '"')
         latestIPAUrl="https://github.com/czy0729/Bangumi/releases/download/${latestVersion}/bangumi_${latestVersion}_archive.ipa"
         statusCode=$(curl --silent --head -w "%{http_code}\n" "$latestIPAUrl" -o /dev/null)
-        date=$(date +"%Y-%m-%dT%H:%M:%S:%z")
-        size=$(curl --silent --head -L "$latestIPAUrl" | grep -i content-length | tail -1 | awk '{print $2}')
-        
-        if [ true ]; then
+             
+        if [ $statusCode != 404 ]; then
+          date=$(date +"%Y-%m-%dT%H:%M:%S:%z")
+          size=$(curl --silent --head -L "$latestIPAUrl" | grep -i content-length | tail -1 | awk '{print $2}')
+
           jq --null-input \
             --arg latestVersion $latestVersion \
             --arg latestIPAUrl $latestIPAUrl  \
