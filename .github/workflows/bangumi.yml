@@ -21,7 +21,9 @@ jobs:
 
         latestIPAUrl="https://github.com/czy0729/Bangumi/releases/download/${latestVersion}/bangumi_${latestVersion}_archive.ipa"
 
-        if [ $currentVersion == $latestVersion ]; then
+        statusCode=$(curl --silent --head -w "%{http_code}\n" "$latestIPAUrl" -o /dev/null)
+
+        if [ $currentVersion == $latestVersion && $statusCode == 404  ]; then
           echo "current bangumi version is latest"
         else
 
