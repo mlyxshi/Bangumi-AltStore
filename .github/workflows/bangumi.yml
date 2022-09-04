@@ -24,7 +24,6 @@ jobs:
         if [ true ]; then
           jq --null-input \
             --arg latestVersion $latestVersion \
-            --arg whatsnew $whatsnew \
             --arg latestIPAUrl $latestIPAUrl  \
             '{ "name": "Bangumi", "identifier": "tv.bangumi.czy0729", "apps": [{ "beta": false, "name": "Bangumi", "bundleIdentifier": "tv.bangumi.czy0729", "developerName": "czy0729", "subtitle": "Bangumi", "version": $latestVersion, "versionDate": "2022-08-29T11:21:00+02:00", "versionDescription": "test", "downloadURL": $latestIPAUrl, "localizedDescription": "An unofficial https://bgm.tv app client for Android and iOS, built with React Native", "iconURL": "https://raw.githubusercontent.com/czy0729/Bangumi/master/src/assets/images/icon.png", "tintColor": "9b54fd", "size": 120583721, "screenshotURLs": ["https://user-images.githubusercontent.com/13514316/171143439-5e9c6c22-889d-4774-8c66-4316294d5019.png","https://user-images.githubusercontent.com/13514316/171143470-a982f725-2b86-4c8a-b1a3-f3a3b2b13060.png","https://user-images.githubusercontent.com/13514316/171143473-6589f342-9ff3-4f56-b2e4-9d6e1dfd15ca.png"] }] }' \
             >  ${GITHUB_WORKSPACE}/bangumi.json
