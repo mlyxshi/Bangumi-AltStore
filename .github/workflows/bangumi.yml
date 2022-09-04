@@ -29,7 +29,7 @@ jobs:
             --arg latestVersion $latestVersion \
             --arg latestIPAUrl $latestIPAUrl  \
             '{ "name": "Bangumi", "identifier": "tv.bangumi.czy0729", "apps": [{ "beta": false, "name": "Bangumi",}] }' \
-            >  ${GITHUB_WORKSPACE}/config/bangumi.json
+            >  ${GITHUB_WORKSPACE}/bangumi.json
         fi
 
     - name: Create Pull Request
