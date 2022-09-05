@@ -4,7 +4,7 @@
     "apps": [
       {
         "beta": false,
-        "name": "Bangumi",
+        "name": "Bangumi Repo",
         "bundleIdentifier": "tv.bangumi.czy0729",
         "developerName": "czy0729",
         "subtitle": "Bangumi",
