@@ -17,10 +17,9 @@ jobs:
       run: |
 
         latestVersion=$(curl --silent "https://api.github.com/repos/czy0729/Bangumi/releases/latest" | jq ."tag_name" | tr -d '"')
-        latestIPAUrl="https://github.com/czy0729/Bangumi/releases/download/${latestVersion}/bangumi_v${latestVersion}_archive.ipa"
-        statusCode=$(curl --silent --head -w "%{http_code}\n" "$latestIPAUrl" -o /dev/null)
+        latestIPAUrl=$(curl --silent "https://api.github.com/repos/czy0729/Bangumi/releases/latest"| jq ."assets[].browser_download_url"| grep ipa | tr -d '"')
              
-        if [ $statusCode != 404 ]; then
+        if [ ! -z "$latestIPAUrl" ]; then
           date=$(curl --silent "https://api.github.com/repos/czy0729/Bangumi/releases/latest" | jq ."published_at" | tr -d '"')
           size=$(curl --silent --head -L "$latestIPAUrl" | grep -i content-length | tail -1 | awk '{print $2}' | tr -d '\r')
           whatsnew=$(curl --silent "https://api.github.com/repos/czy0729/Bangumi/releases/latest" | jq ."body")
