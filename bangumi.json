@@ -1,10 +1,10 @@
 {
-    "name": "Bangumi",
+    "name": "Bangumi Repo",
     "identifier": "czy0729.bangumi.AltSource",
     "apps": [
       {
         "beta": false,
-        "name": "Bangumi Repo",
+        "name": "Bangumi",
         "bundleIdentifier": "tv.bangumi.czy0729",
         "developerName": "czy0729",
         "subtitle": "Bangumi",
