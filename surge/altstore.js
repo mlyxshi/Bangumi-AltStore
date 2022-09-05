@@ -11,7 +11,11 @@ let fake = {
       {
         "identifier": "tv.bangumi.czy0729",
         "sourceURL": "https://raw.githubusercontent.com/mlyxshi/Bangumi-AltStore/main/bangumi.json"
-      }
+      },
+      {
+        "identifier": "foxster-mp4 Repo",
+        "sourceURL": "https://raw.githubusercontent.com/foxster-mp4/altsource/master/apps.json"
+      }     
     ]
   }
 
