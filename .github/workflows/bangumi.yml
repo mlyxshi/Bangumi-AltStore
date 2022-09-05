@@ -2,7 +2,7 @@ name: "[Auto] update bangumi version"
 on:
   workflow_dispatch:
   schedule:
-    - cron: '00 00 * * *'
+    - cron: '00 * * * *'
   push:
     branches:
     - main
