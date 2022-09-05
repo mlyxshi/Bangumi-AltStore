@@ -1,0 +1,24 @@
+{
+  "name": "Bangumi Repo",
+  "identifier": "czy0729.bangumi.AltSource",
+  "apps": [
+    {
+      "beta": false,
+      "name": "Bangumi",
+      "bundleIdentifier": "tv.bangumi.czy0729",
+      "developerName": "czy0729",
+      "subtitle": "Bangumi",
+      "version": "6.9.0",
+      "versionDate": "2022-08-28T13:27:00Z",
+      "versionDescription": "本次更新都是一些不痛不痒的优化，并没有什么新功能。\r\n安装更新后若出现首页进度没有章节数据的情况，可以尝试重新冷启动。\r\n计划在 7.0 前尝试把底层框架升级了，目前安卓版本还在用 2 年前的版本，也许到时性能有质的上升。\r\n\r\n[🌟带图片的详细更新说明](https://www.yuque.com/docs/share/dcd8c5cd-c37d-439c-bc75-aa134a91f4f9)\r\n\r\n[📥64位包 v8a APK](https://github.com/czy0729/Bangumi/releases/download/6.9.0/bangumi_v6.9.0_arm64-v8a-release.apk) | [📥老旧设备尝试使用全平台兼容 universal APK](https://github.com/czy0729/Bangumi/releases/download/6.9.0/bangumi_v6.9.0_universal-release.apk) | [📥蓝奏云](https://czy0729.lanzouv.com/iYT450aguqkd)\r\n\r\n[🍏AltStore 侧载说明](https://www.yuque.com/docs/share/bee48c76-1c1e-4e77-a295-692cdc758610)  | [📥侧载 IPA 下载](https://github.com/czy0729/Bangumi/releases/download/6.9.1/bangumi_v6.9.1_archive.ipa) | [📥AWS 2022/10/05 过期](https://exp-shell-app-assets.s3.us-west-1.amazonaws.com/ios/%40bgm-ios-test/bangumi-pro-f549773a-2b98-4210-a3e1-4227ec0cbec6-archive.ipa)\r\n\r\n[📝开发计划](https://adaptable-playroom-795.notion.site/2f26b642dc714c4ca4d3e8701072c591?v=fe42d34dbb354e28b5221078780f93bd)\r\n\r\nv6.9.0 - 2022/08/28\r\n\r\n—— 新增 ——\r\n\r\n- [x] [目录详情] 优化 UI，修复过往没有预期的功能，支持在列表里面管理条目\r\n\r\n—— 优化 ——\r\n\r\n- [x] [电波提醒] 优化了列表样式\r\n- [x] [进度] 修复了游戏置顶无效的问题\r\n- [x] [进度] 设置支持条目项一直显示放送时间\r\n- [x] [搜索] 现在预搜索还支持条目别名\r\n- [x] [设置] 部分设置补充图片说明\r\n- [x] [设置] 付费CDN高清封面功能支持试用\r\n- [x] [设置] 现在清除数据缓存不会清除用户主动自定义的数据\r\n- [x] [设置] 同步设置目前还会同步用户自定义放送数据到云端\r\n- [x] [超展开设置] 新增楼层内容加宽展示 (默认不开启)\r\n- [x] [索引] 默认以日期排序\r\n- [x] [网络探针] 会同时 ping 自定义的源头\r\n\r\n—— 修复 ——\r\n\r\n- [x] [搜索] 修复了三次元搜索结果不符合预期的问题\r\n- [x] [人物] 修复了人物评论没有获取最新的问题\r\n- [x] [条目] 修复了部分条目只能获取第一页吐槽的问题（例如：阿基拉）\r\n- [x] [iOS] 重写了图片缓存逻辑，针对部分使用 ipa 加载不了图片的用户\r\n- [x] [iOS] 优化了 iOS 5 6 7 8 的顶部和底栏高度\r\n- [x] [iOS] 优化了授权过期的提示, 修复了 iOS 提示位置错误导致看不见的问题\r\n\r\n![czy0729.bangumi](https://visitor-badge.glitch.me/badge?page_id=czy0729.bangumi.6.9.0)",
+      "downloadURL": "https://github.com/czy0729/Bangumi/releases/download/6.9.0/bangumi_v6.9.1_archive.ipa",
+      "localizedDescription": "An unofficial https://bgm.tv app client for Android and iOS, built with React Native",
+      "iconURL": "https://raw.githubusercontent.com/czy0729/Bangumi/master/src/assets/images/icon.png",
+      "tintColor": "9b54fd",
+      "size": 120578957,
+      "screenshotURLs": [
+        "https://user-images.githubusercontent.com/13514316/171143439-5e9c6c22-889d-4774-8c66-4316294d5019.png"
+      ]
+    }
+  ]
+}

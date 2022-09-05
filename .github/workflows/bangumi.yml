@@ -29,11 +29,12 @@ jobs:
             --arg latestIPAUrl $latestIPAUrl  \
             --arg date $date  \
             --argjson size $size \
-            '{ "name": "Bangumi Repo", "identifier": "czy0729.bangumi.AltSource", "apps": [{ "beta": false, "name": "Bangumi", "bundleIdentifier": "tv.bangumi.czy0729", "developerName": "czy0729", "subtitle": "Bangumi", "version": $latestVersion, "versionDate": $date, "versionDescription": "test", "downloadURL": $latestIPAUrl, "localizedDescription": "An unofficial https://bgm.tv app client for Android and iOS, built with React Native", "iconURL": "https://raw.githubusercontent.com/czy0729/Bangumi/master/src/assets/images/icon.png", "tintColor": "9b54fd", "size": $size, "screenshotURLs": ["https://user-images.githubusercontent.com/13514316/171143439-5e9c6c22-889d-4774-8c66-4316294d5019.png"] }] }' \
+            '{ "name": "Bangumi Repo", "identifier": "czy0729.bangumi.AltSource", "apps": [{ "beta": false, "name": "Bangumi", "bundleIdentifier": "tv.bangumi.czy0729", "developerName": "czy0729", "subtitle": "Bangumi", "version": $latestVersion, "versionDate": $date, "versionDescription": "TMP", "downloadURL": $latestIPAUrl, "localizedDescription": "An unofficial https://bgm.tv app client for Android and iOS, built with React Native", "iconURL": "https://raw.githubusercontent.com/czy0729/Bangumi/master/src/assets/images/icon.png", "tintColor": "9b54fd", "size": $size, "screenshotURLs": ["https://user-images.githubusercontent.com/13514316/171143439-5e9c6c22-889d-4774-8c66-4316294d5019.png"] }] }' \
             >  /tmp/bangumi.json
           
-          #strange way to fix auto escape by jq
-          cat /tmp/bangumi.json | sed 's/\\"//g' | sed 's/\\\\r/\\r/g' | sed 's/\\\\n/\\n/g' > ${GITHUB_WORKSPACE}/bangumi.json
+          # (what's new) can not be an argument of jq
+          # hacky way
+          cat /tmp/bangumi.json| jq  ".apps[0].versionDescription|=$whatsnew" > ${GITHUB_WORKSPACE}/bangumi.json
 
         fi
         
