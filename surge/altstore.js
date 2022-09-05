@@ -9,11 +9,11 @@ let fake = {
         "sourceURL": "https://alt.getutm.app"
       },
       {
-        "identifier": "tv.bangumi.czy0729",
+        "identifier": "czy0729.bangumi.AltSource",
         "sourceURL": "https://raw.githubusercontent.com/mlyxshi/Bangumi-AltStore/main/bangumi.json"
       },
       {
-        "identifier": "foxster-mp4 Repo",
+        "identifier": "me.foxster.AltSource",
         "sourceURL": "https://raw.githubusercontent.com/foxster-mp4/altsource/master/apps.json"
       }     
     ]
