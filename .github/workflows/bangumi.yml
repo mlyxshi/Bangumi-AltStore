@@ -23,7 +23,7 @@ jobs:
           size=$(curl --silent --head -L $(echo $latestIPAUrl | tr -d '"') | grep -i content-length | tail -1 | awk '{print $2}' | tr -d '\r')
           whatsnew=$(curl --silent "https://api.github.com/repos/czy0729/Bangumi/releases/latest" | jq ."body")
 
-          curl --silent https://raw.githubusercontent.com/mlyxshi/Bangumi-AltStore/main/bangumi.json \
+          cat ${GITHUB_WORKSPACE}/bangumi.json \
           | jq ".apps[0].version|=$latestVersion" \
           | jq ".apps[0].versionDate|=$date" \
           | jq ".apps[0].versionDescription|=$whatsnew" \
