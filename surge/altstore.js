@@ -14,7 +14,7 @@ let fake = {
       },
       {
         "identifier": "me.foxster.AltSource",
-        "sourceURL": "https://raw.githubusercontent.com/foxster-mp4/altsource/master/apps.json"
+        "sourceURL": "https://raw.githubusercontent.com/therealFoxster/altsource/master/apps.json"
       }     
     ]
   }
