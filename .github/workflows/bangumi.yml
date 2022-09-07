@@ -28,7 +28,7 @@ jobs:
           | jq ".apps[0].versionDate|=$date" \
           | jq ".apps[0].versionDescription|=$whatsnew" \
           | jq ".apps[0].size|=$size" \
-          | jq ".apps[0].downloadUrl|=$latestIPAUrl" > /tmp/bangumi.json
+          | jq ".apps[0].downloadURL|=$latestIPAUrl" > /tmp/bangumi.json
 
           cat /tmp/bangumi.json > ${GITHUB_WORKSPACE}/bangumi.json
         fi

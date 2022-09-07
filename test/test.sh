@@ -11,5 +11,5 @@ curl --silent https://raw.githubusercontent.com/mlyxshi/Bangumi-AltStore/main/ba
 | jq ".apps[0].versionDate|=$date" \
 | jq ".apps[0].versionDescription|=$whatsnew" \
 | jq ".apps[0].size|=$size" \
-| jq ".apps[0].downloadUrl|=$latestIPAUrl" > out.json
+| jq ".apps[0].downloadURL|=$latestIPAUrl" > out.json
     
