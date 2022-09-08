@@ -1,1 +1,4 @@
+1. Add Surge Module
 https://raw.githubusercontent.com/mlyxshi/Bangumi-AltStore/main/surge/altstore.sgmodule
+
+2. Reinstall Altstore to trigger re-fetch trustedsources
