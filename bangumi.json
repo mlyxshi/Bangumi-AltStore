@@ -8,14 +8,14 @@
       "bundleIdentifier": "tv.bangumi.czy0729",
       "developerName": "czy0729",
       "subtitle": "Bangumi",
-      "version": "7.1.0",
-      "versionDate": "2022-09-24T23:58:19Z",
-      "versionDescription": "[🌟带图片的详细更新说明](https://www.yuque.com/docs/share/dd735b99-c539-41e5-9cb9-760f9de0e9aa)\r\n\r\n[📥64位包 v8a APK](https://github.com/czy0729/Bangumi/releases/download/7.1.0/bangumi_v7.1.0_arm64-v8a.apk) | [📥老旧设备尝试使用 v7a APK](https://github.com/czy0729/Bangumi/releases/download/7.1.0/bangumi_v7.1.0_armeabi-v7a.apk) | [📥蓝奏云](https://czy0729.lanzouv.com/iX3NP0cb144d)\r\n\r\n[🍏AltStore 侧载说明](https://www.yuque.com/docs/share/bee48c76-1c1e-4e77-a295-692cdc758610)  | [📥侧载 IPA 下载](https://github.com/czy0729/Bangumi/releases/download/7.1.0/bangumi_v7.1.0_archive.ipa) | [📥AWS 2022/10/28 过期](https://exp-shell-app-assets.s3.us-west-1.amazonaws.com/ios/%40bgm-ios-test/bangumi-pro-15477313-bfcf-4147-98e8-51d174b495e5-archive.ipa)\r\n\r\n最新说明：使用 IPA 的用户，若出现图片加载不出来的情况，请到设置 → 缓存 → 打开 [iOS使用系统默认图片缓存策略]\r\n\r\n[📥WIN11 WSA 子系统 APK](https://github.com/czy0729/Bangumi/releases/download/7.1.0/bangumi_v7.1.0_x86_64.apk)\r\n\r\n[📝开发计划](https://adaptable-playroom-795.notion.site/2f26b642dc714c4ca4d3e8701072c591?v=fe42d34dbb354e28b5221078780f93bd)\r\n\r\nv7.1.0 - 2022/09/25\r\n\r\n—— 新增 ——\r\n\r\n- [x] [发现] 找条目功能重构 (更新了更多的数据、更合理的分类等，具体细节请进入页面使用查看)\r\n- [x] 条目未放送的章节按钮，支持添加放送提醒到手机日历 (暂安卓 only)\r\n\r\n—— 优化 ——\r\n\r\n- [x] [人物] 以京都动画人物页面卡顿为基准，单独优化\r\n- [x] [条目] 标签增加了可以直接跳转到〔找条目〕对应筛选条件的逻辑\r\n- [x] 大量减少了打包到 APP 里面的静态数据，减少安卓内存溢出闪退\r\n\r\n—— 修复 ——\r\n\r\n- [x] 修复了默认头像用户自定义 APP 头像后，所有默认头像都为自己的问题\r\n- [x] 修复了若干已知问题\r\n\r\n![czy0729.bangumi](https://visitor-badge.glitch.me/badge?page_id=czy0729.bangumi.7.1.0)",
-      "downloadURL": "https://github.com/czy0729/Bangumi/releases/download/7.1.0/bangumi_v7.1.0_archive.ipa",
+      "version": "7.5.3",
+      "versionDate": "2023-01-07T16:01:34Z",
+      "versionDescription": "[🌟图文更新说明](https://www.yuque.com/chenzhenyu-k0epm/znygb4/gldi9rhwbnn163pk) \r\n\r\n[📥蓝奏云 64位包 v8a APK (推荐)](https://czy0729.lanzouf.com/i5Zdo0k4oaji) | [📥64位包 v8a APK](https://github.com/czy0729/Bangumi/releases/download/7.5.3/bangumi_v7.5.3_arm64-v8a.apk) | [📥32位包 v7a APK](https://github.com/czy0729/Bangumi/releases/download/7.5.3/bangumi_v7.5.3_armeabi-v7a.apk)\r\n\r\n[📥最新 IPA ](https://github.com/czy0729/Bangumi/releases/download/7.5.3/bangumi_v7.5.3_archive.ipa) (没验证过，可以帮忙反馈)\r\n\r\n[📥WIN11 子系统 APK](https://github.com/czy0729/Bangumi/releases/download/7.5.3/bangumi_v7.5.3_x86_64.apk)\r\n\r\nv7.5.3 -2023/01/07\r\n\r\n—— 优化 ——\r\n- [x] 更新了部分静态数据 (如 1 月新番的数据)\r\n- [x] 部分年份选项增加 2023\r\n\r\n![czy0729.bangumi](https://visitor-badge.glitch.me/badge?page_id=czy0729.bangumi.7.5.3)",
+      "downloadURL": "https://github.com/czy0729/Bangumi/releases/download/7.5.3/bangumi_v7.5.3_archive.ipa",
       "localizedDescription": "An unofficial https://bgm.tv app client for Android and iOS, built with React Native",
       "iconURL": "https://raw.githubusercontent.com/czy0729/Bangumi/master/src/assets/images/icon.png",
       "tintColor": "9b54fd",
-      "size": 120740913,
+      "size": 38991462,
       "screenshotURLs": [
         "https://user-images.githubusercontent.com/13514316/171143439-5e9c6c22-889d-4774-8c66-4316294d5019.png"
       ]
